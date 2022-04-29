@@ -6,7 +6,8 @@ cat <<EOF > /boot/mzp361wv1t.txt
 gpio=0-9=a2
 gpio=12-17=a2
 gpio=20-25=a2
-gpio=18,19=op,dh,pd
+gpio=18=op,dh,pd
+gpio=19=op,dh,pd
 display_rotate=3
 framebuffer_width=800
 framebuffer_height=480
@@ -15,7 +16,7 @@ display_default_lcd=1
 dpi_group=2
 dpi_mode=87
 dpi_output_format=0x07f006
-hdmi_timings=480 0 41 20 60 800 0 5 10 10 0 0 0 60 0 32000000 3
+hdmi_timings=480 0 41 60 20 800 0 5 10 10 0 0 0 60 0 32000000 3
 EOF
 cat <<EOF > /etc/rc.local
 #!/bin/sh -e
